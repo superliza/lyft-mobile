@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <title> Lyft-mobile </title>
+    </head>
+    <body>
+
+        <!-- Vista splash -->
+        <div class="container-splash background-splash">
+            <div class="row">
+                <div class="col s12 img-logo">
+                    <img src="assets/images/logo-white.png" class="responsive-img lyft">
+                </div>		
+            </div>
+        </div> 
+
+        <!-- Sign up/Log in -->
+		<div class="container-sign-up lyft-background hide">
+            <div class="row">
+                <div class="col s9 offset-s3">
+                    <a class="waves-effect waves-light btn button-lyft"> Log in </a>
+                    <a href="#" id="sign-up"class="waves-effect waves-light btn button-lyft"> Sign up </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sign up number/phone -->
+        <div class="container-phone hide">
+            <div class="row row-number-phone">
+                <div class="col s2">
+                    <i class="material-icons icon-phone">chevron_left</i>
+                </div>
+                <div class="col s10">
+                    <h5 class="title-sign-up"> Sign up </h5>
+                    <p> Join now for free ride credit </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <select class="icons">
+                        <option value="Pais" disabled selected> Escoge tu país </option>
+                        <option value="Mexico" data-icon="assets/images/mexico.png" class="left circle"> México +52 </option>
+                        <option value="Chile" data-icon="assets/images/chile.png" class="left circle"> Chile +56 </option>
+                        <option value="Peru" data-icon="assets/images/peru.png" class="left circle"> Perú +51 </option>
+                    </select>
+                </div>
+                <div class="input-field col s6">
+                    <input id="icon_telephone" type="tel" class="validate phone-input">
+                    <label for="icon_telephone">Your phone </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center-align">
+                    <a class="waves-effect waves-light btn-large button-pin" disabled> N E X T </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- verify pin -->
+        <div class="container-verify-pin hide">
+            <div class="row row-number-phone">
+                <div class="col s2">
+                    <i class="material-icons icon-phone">chevron_left</i>
+                </div>
+                <div class="col s10">
+                    <h5 class="verify-pin"> Verify phone number </h5>
+                    <p> Join now for free ride credit </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6 center-align">
+                    <p> LAB - </p>
+                </div>
+                <div class="col s4">
+                    <input id="put-code"type="text" maxlength="3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <a class="waves-effect waves-light btn button-pin"> Resend code </a>
+                </div>
+                <div class="col s6">
+                    <a class="waves-effect waves-light btn button-verify" disabled> N E X T </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- formulary name/email -->
+        <div class="container-formulary hide">
+            <div class="row row-number-phone">
+                <div class="col s2">
+                    <i class="material-icons icon-phone">chevron_left</i>
+                </div>
+                <div class="col s10">
+                    <h5 class="title-sign-up"> Sign up </h5>
+                    <p> Join now for free ride credit </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <form class="col s12">
+                    <input type="checkbox" id="test5" />
+                    <label for="test5"> I agree to lyft's <a href="#"> Therms of services </a></label>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col s12 center-align">
+                    <a class="waves-effect waves-light btn-large button-formulary" disabled> N E X T </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- finish congrats -->
+        <div class="container-congrats hide">
+            <div class="row">
+                <div class="col s12 img-logo">
+                    <img src="assets/images/logo-white.png" class="responsive-img lyft">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <img src="assets/images/very-good.jpg" class="responsive-img img-very-good">
+                </div>
+            </div>
+        </div>
+
+        <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

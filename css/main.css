@@ -1,0 +1,52 @@
+div.container-splash, div.container-congrats {
+    background: linear-gradient(#530060,#960573,#E00A88);
+    height: 100vh;
+}
+
+div.img-logo > img.lyft {
+	height: 20vh;
+	margin-top: 38vh;
+	margin-left: 18vh;
+}
+
+div.col > img.img-very-good {
+	height: 20vh;
+	margin-left: 21vh;
+}
+
+div.lyft-background {
+	background-image: url("../assets/images/lyft-logo.png");
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+a.button-lyft {
+	background-color: transparent;
+	color: white;
+	margin-top: 80vh;
+	border-radius: 1vh;
+	padding: 1vh;
+}
+
+i.icon-phone {
+	margin-top: 4vh;
+	font-size: 8vh;
+}
+
+h5.title-sign-up {
+    margin-top: 5vh;
+    margin-left: 10vh;
+}
+
+div.row-number-phone {
+    border-bottom: 0.2vh solid black;
+}
+
+a.button-pin, a.button-verify, a.button-formulary {
+	background-color: #960573;
+}
+
+h5.verify-pin {
+	margin-top: 5vh;
+}
