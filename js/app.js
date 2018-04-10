@@ -7,6 +7,9 @@ var $buttonPIN = $('.button-pin');
 var $verifyPIN = $('.container-verify-pin');
 var $buttonVerify = $('.button-verify');
 var $formulary = $('.container-formulary');
+var $inputValidate = $('.validate-input');
+var $email = $('#email');
+// var $buttonAccept = $('.accept-therms');
 
 function loadPage() {
     setTimeout(function() {
@@ -20,6 +23,10 @@ function loadPage() {
     $buttonPIN.click(showPIN);
     $inputPIN.keyup(typePIN);
     $buttonVerify.click(isCorrectPIN);
+    $inputValidate.keyup(formularyName);
+    $email.keyup(email);
+    $('.accept-therms').click(accept);
+    
 }
 
 //función que pasa del log in/sign up a la vista del país y número telefónico del usuario.
@@ -32,7 +39,7 @@ function showNext(e) {
 //sólo acepta numbers y su valor tiene que ser mayor a 0 e igual a 10 para que se habilite el botón.
 function validatePhone(e) {
     e.preventDefault();
-    if($(this).val().trim().length > 0 && $(this).val().trim().length == 10) {
+    if($(this).val().trim().length > 0 && $(this).val().trim().length === 10) {
         $buttonPIN.removeAttr('disabled');
     } else {
         $buttonPIN.attr('disabled', true);
@@ -78,12 +85,39 @@ function isCorrectPIN(e) {
     var typeCode = $('body').data('theValuePIN');
     // console.log(pin);
     // console.log(typeCode);
-    if(pin == typeCode) {
+    if(pin === typeCode) {
         $verifyPIN.addClass('hide');
         $formulary.removeClass('hide');
     } else {
         alert('El código no es correcto');
     }
+}
+
+function formularyName(/*e*/) {
+    // e.preventDefault();
+    this.value = this.value.match(/^[a-zA-Z_áéíóúñ\s]*$/);  
+}
+
+function email(/*e*/) {
+    // e.preventDefault();
+    var regExp = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    var validate = regExp.test(this.value);
+    // console.log(this);  
+}
+
+function accept(/*e*/) {
+    // e.preventDefault();
+    // console.log(this.checked);
+    if (this.checked) {
+        $('.button-formulary').removeAttr('disabled'); 
+        $('.button-formulary').click(function () {
+            $formulary.addClass('hide');
+            $('.container-congrats').removeClass('hide');
+        }); 
+    } else {
+        $('.button-formulary').attr('disabled', true);  
+         
+    }   
 }
 
 $(document).ready(loadPage);

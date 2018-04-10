@@ -1,7 +1,7 @@
 # App de Lyft
 
 * **Track:** _Common Core_
-* **Empresa:** _Laboratoria_
+* **Empresa:** _Proyecto elaborado para [Laboratoria](http://www.laboratoria.la/)_
 * **Enlace:** [Enlace al proyecto](https://superliza.github.io/lyft-mobile/)
 
 ---
