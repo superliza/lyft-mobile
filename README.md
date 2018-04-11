@@ -1,5 +1,7 @@
 # App de Lyft
 
+![image](https://user-images.githubusercontent.com/32879152/38622482-e5c81548-3d68-11e8-82fa-f8bb38e12d26.png)
+
 * **Track:** _Common Core_
 * **Empresa:** _Proyecto elaborado para [Laboratoria](http://www.laboratoria.la/)_
 * **Enlace:** [Enlace al proyecto](https://superliza.github.io/lyft-mobile/)

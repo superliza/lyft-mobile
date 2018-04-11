@@ -3,7 +3,7 @@ div.container-splash, div.container-congrats {
     height: 100vh;
 }
 
-div.img-logo > img.lyft {
+div.img-logo > img.lyft-mobile {
 	height: 20vh;
 	margin-top: 38vh;
 	margin-left: 18vh;
