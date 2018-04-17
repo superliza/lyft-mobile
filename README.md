@@ -21,7 +21,7 @@ Permite a los usuarios registrarse en la plataforma Lyft mediante una web app qu
 
 ---
 
-# Capturas:
+## Capturas:
 
 ### Vista en móviles
 ![Captura 1](assets/images/captura-1.jpg)
