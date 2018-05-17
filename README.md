@@ -1,4 +1,4 @@
-# App de Lyft
+# Lyft
 
 ![image](https://user-images.githubusercontent.com/32879152/38622482-e5c81548-3d68-11e8-82fa-f8bb38e12d26.png)
 
@@ -20,7 +20,7 @@ Permite a los usuarios registrarse en la plataforma Lyft mediante una web app qu
 
 ---
 
-# Capturas:
+## Capturas:
 
 ### Vista en móviles
 ![Captura 1](assets/images/captura-1.jpg)
